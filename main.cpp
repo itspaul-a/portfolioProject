@@ -3,6 +3,7 @@
 #include <optional>
 #include "Perpetuus/Perpetuus.hpp"
 #include "calculator/Calc.hpp"
+#include "Pong/Pong.hpp"
 
 class taskBar : public sf::RectangleShape 
 {
@@ -91,6 +92,7 @@ int main()
 
 	Perpetuus game;
 	Calc calculator;
+	Pong pong;
 
     backgroundSprite.setScale({scaleX, scaleY});
 
@@ -111,7 +113,7 @@ int main()
 					calculator.run();
 
                 if (app3.containsMouse(window, mousePos))
-                    std::cout << "App 3 clicked\n";
+					pong.run();
             }
         }
 
