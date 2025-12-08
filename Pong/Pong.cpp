@@ -15,7 +15,7 @@ Pong::Pong()
 
 void Pong::run()
 {
-	sf::RenderWindow window(sf::VideoMode({800,600}), "window");
+	sf::RenderWindow window(sf::VideoMode({800,600}), "Pong");
 	window.setFramerateLimit(60);
 
 	Paddle paddle({20, 100}, {0, 0}, 400);
