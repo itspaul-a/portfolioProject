@@ -16,7 +16,7 @@ public:
 	void run()
 	{
 	    sf::RenderWindow window(
-	        sf::VideoMode({480, 720},32),
+	        sf::VideoMode({400, 400},32),
 	        "Calculator");
 	    window.setFramerateLimit(60);
 	    Calculator calculator;
