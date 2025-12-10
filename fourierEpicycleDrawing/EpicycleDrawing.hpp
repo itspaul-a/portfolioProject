@@ -1,3 +1,10 @@
+/*
+ Thank you to professor Dave Matthews for helping with the math
+
+ TODO:
+	- flip through shapes
+*/
+
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <complex>
@@ -47,10 +54,12 @@ public:
 	    for (int i = 0; i < N; i++) 
 		{
 	        float t = (float)i / N * 2.0f * M_PI;
-	
+			
+			//parametric equations
+			
 			//heart
-	        double x = 16 * pow(sin(t), 3) * 20;
-	        double y = -(13*cos(t) - 5*cos(2*t) - 2*cos(3*t) - cos(4*t)) * 20;
+	        //double x = 16 * pow(sin(t), 3) * 20;
+	        //double y = -(13*cos(t) - 5*cos(2*t) - 2*cos(3*t) - cos(4*t)) * 20;
 			
 			//Circle
 			//double x = cos(t) * 300;
@@ -78,12 +87,12 @@ public:
 			
 	
 			//rose
-			//1double a = 100;
-			//1double k = 5;
-			//1// radius
-			//1double r = a * cos(k * t);
-			//1double x = r * cos(t);
-			//1double y = r * sin(t);
+			double a = 100;
+			double k = 5;
+			// radius
+			double r = a * cos(k * t);
+			double x = r * cos(t);
+			double y = r * sin(t);
 	
 	        signal.push_back({x, y});
 	    }
